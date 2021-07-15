@@ -1,8 +1,14 @@
 body {
     font-family: Roboto;
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
 }
 
 .topo {
+    background-color: white;
     height: 54px;
     width: 100%;
     display: flex;
@@ -14,7 +20,6 @@ body {
 }
 
 .cabecalho {
-    background-color: white;
     width: 935px;
     display: flex;
     justify-content: space-between;
@@ -53,26 +58,77 @@ ion-icon {
 .pesquisa ::-webkit-input-placeholder {
     color: #979797;
     font-size: 12px;
-    text-align: center;
+    text-align: center
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
-    width: 125px;
+    width: 140px;
 }
 
 .container {
     padding-top: 88px;
     display: flex;
-    height: 1000px;
+    justify-content: space-between;
     width: 935px;
     margin: 0 auto;
 }
 
 .conteudo {
+    width: 614px;
+}
+
+.caixa-stories {
+    height: 118px;
+    width: 614px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 24px;
+    background-color: red;
+}
+
+.post {
+    width: 614px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 60px;
+    background-color: green;
+}
+
+.post h1 {
+    font-size: 14px;
+    color: #262626;
+    font-weight: bold;
+}
+
+.post img {
     width: 100%;
-    background-color: blue;
+}
+
+.caixa-autor {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 15px;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+}
+
+.autor img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 15px;
+}
+
+.mais-opcoes {
+    background-color:yellow;
+    display: flex;
+    align-items: center;
 }
 
 .sidebar {
