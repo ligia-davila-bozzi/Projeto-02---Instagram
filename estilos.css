@@ -1,0 +1,81 @@
+body {
+    font-family: Roboto;
+}
+
+.topo {
+    height: 54px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #dbdbdb;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.cabecalho {
+    background-color: white;
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-icon {
+    font-size: 19.5px;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-top: 8px;
+}
+
+.divisoria {
+    height: 19.5px;
+    width: 1px;
+    background-color: #dbdbdb;
+    margin: 0 10px;
+}
+
+.pesquisa input {
+    height: 28px;
+    width: 215px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.pesquisa ::-webkit-input-placeholder {
+    color: #979797;
+    font-size: 12px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
+}
+
+.container {
+    padding-top: 88px;
+    display: flex;
+    height: 1000px;
+    width: 935px;
+    margin: 0 auto;
+}
+
+.conteudo {
+    width: 100%;
+    background-color: blue;
+}
+
+.sidebar {
+    background-color: blueviolet;
+    width: 293px;
+}
