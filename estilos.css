@@ -21,6 +21,7 @@ p {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 100;
 }
 
 .cabecalho {
@@ -90,6 +91,43 @@ ion-icon {
     border-radius: 3px;
     margin-bottom: 24px;
     background-color: red;
+    display: flex;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.caixa-stories div {
+    position: relative;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.background-stories {
+    width: 66px;
+    border-radius: 33px;
+    margin-bottom: 2px;
+}
+
+.perfil-stories {
+    width: 56px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    border-radius: 28px;
+}
+
+.caixa-stories ion-icon {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    color: white;
+    top: 46px;
+    left: 580px;
+    border: 1px solid black;
+    border-radius: 13px;
+    box-shadow: 10px 5px 5px black;
 }
 
 .post {
@@ -110,7 +148,8 @@ ion-icon {
     width: 100%;
 }
 
-.post embed {
+.post video {
+    width: 100%;
 }
 
 .caixa-autor {
@@ -132,9 +171,14 @@ ion-icon {
 }
 
 .mais-opcoes {
-    background-color:yellow;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 12px;
+}
+
+.mais-opcoes ion-icon {
+    font-size: 3px;
 }
 
 .botoes {
