@@ -32,6 +32,7 @@ ion-icon {
     left: 0;
     top: 0;
     z-index: 100;
+    padding: 0 15px;
 }
 
 .cabecalho {
@@ -39,6 +40,10 @@ ion-icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.cabecalho-mobile {
+    display: none;
 }
 
 .logo {
@@ -132,8 +137,8 @@ ion-icon {
     width: 26px;
     height: 26px;
     color: white;
-    top: 46px;
-    left: 580px;
+    top: 39%;
+    left: 95%;
     border-radius: 13px;
 }
 
@@ -228,6 +233,9 @@ ion-icon {
 .sidebar {
     width: 293px;
     padding-top: 15px;
+    position: sticky;
+    top: 88px;
+    height: 100%;
 }
 
 .meu-perfil, .perfil-sugestao {
@@ -289,4 +297,89 @@ ion-icon {
     color:#c7c7c7;
     font-size: 11px;
     line-height: 15px;
+}
+
+/* Config da barra inferior */
+.barra-inferior {
+    display: none;
+}
+
+@media (max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+
+    .container {
+        width: 614px;
+    }
+}
+
+@media (max-width: 614px) {
+    .cabecalho {
+        display: none;
+    }
+
+    .topo {
+        width: 100%;
+    }
+
+    .cabecalho-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho-mobile img {
+        margin-top: 8px;
+    }
+
+    .container {
+        padding-top: 54px;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .caixa-stories {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        margin-bottom: 0px;
+    }
+
+    .caixa-stories ion-icon {
+        display: none;
+    }
+
+    .post {
+        width: 100%;
+        border-right: none;
+        border-left: none;
+        border-radius: 0px;
+    }
+
+    .barra-inferior {
+        background-color: white;
+        height: 54px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #dbdbdb;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+        padding: 0 15px;
+    }
+
+    .barra-inferior ion-icon {
+        font-size: 22px;
+    }
 }
