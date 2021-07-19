@@ -139,7 +139,7 @@ ion-icon {
     color: white;
     top: 39%;
     left: 95%;
-    border-radius: 13px;
+    filter: drop-shadow(-1px 1px 3px #777777);
 }
 
 /* Config dos Posts */
